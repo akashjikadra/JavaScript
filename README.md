@@ -84,7 +84,14 @@ null == false // -> false
 **`===`**
 * It considers `0` and `-0` as a same `number`.
 ```JavaScript
-NaN === 0     // -> false
+NaN === 0/0     // -> false
+NaN === NaN     // -> false
+```
+**`Object.is()`**
+* It considers `0` and `-0` as different `numbers`.
+```JavaScript
+Object.is(NaN,0/0)  // -> true
+Onject.is(NaN,NaN)  // -> true
 ```
 
 

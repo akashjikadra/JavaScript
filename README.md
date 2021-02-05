@@ -19,9 +19,9 @@ Core Fundamentals
 6) Undefined
 7) Array
 8) Objects
-9) Samples
+9) Symbol
 
-> Out of all datatypes listed above, `number`, `string`, `boolean`, `BigInt`, `sample`, `undefined` are primitive datatypes.
+> Out of all datatypes listed above, `number`, `string`, `boolean`, `BigInt`, `symbol`, `undefined` are primitive datatypes.
 
 ### typeOf()
 It returns a `string` with the type name of datatype.

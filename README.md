@@ -107,4 +107,6 @@ Onject.is(NaN,NaN)  // -> true
 {} + {}       // -> "[object Object][object Object]"
 [] + []       // -> ""
 NaN === NaN   // -> false
+[] == []      // -> false
+[] === []     // -> false
 ```

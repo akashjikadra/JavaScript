@@ -1,5 +1,5 @@
 # JavaScript
-Core Fundamentals
+**Core Fundamentals**
 
 ### Introduction
 * JavaScript initially known as LiveScript, was later known as JavaScript when it evolved and became fully independent language with its own specification known as **ECMAScript**.
@@ -25,9 +25,11 @@ Core Fundamentals
 
 ### typeOf()
 It returns a `string` with the type name of datatype.
+It can be used as an operator `typeof x` as well as a function `typeof(x)`.
 
 ### Interactions 
 1) alert()
+It shows a popup box displaying message that is passed in it.
 It takes one argument and converts it into `string` and prints it into popup.
 ```JavaScript
 alert("Hello World!");
@@ -68,4 +70,25 @@ undefined > 0 // -> false, here undefined is converted into NaN
 * `break/continue` cannot be used after ternary operator `?` in a ternary operation.
 * We can use `label` for loops to break out multiple loops.
 * Functions with no return value or empty return returns `Undefined`.
-
+* `[]` is thruhy value but not true.
+```JavaScript
+Boolean([]) // -> true
+[] == true // -> false
+```
+* `null` is falsy value but not false.
+```JavaScript
+Boolean(null) // -> false
+null == false // -> false
+```
+### Some of the tricky statements and expressions
+* `+` operator tries to convert non primitive operands to primitive(i.e `number` or `string`).
+* first tries to find value of operand by `valueof()`. If it is String then both operand are concatenated as a string or they are added as number.
+```JavaScript
++[]       // -> 0
++{}       // -> NaN
+[] + {}   // -> "[object Object]"
+{} + []   // -> 0
+({} + []) // -> "[object Object]"
+{} + {}   // -> "[object Object][object Object]"
+[] + []   // -> ""
+```

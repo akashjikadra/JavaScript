@@ -80,15 +80,24 @@ Boolean([]) // -> true
 Boolean(null) // -> false
 null == false // -> false
 ```
+### Difference between `===` ans `Object.is()`
+**`===`**
+* It considers `0` and `-0` as a same `number`.
+```JavaScript
+NaN === 0     // -> false
+```
+
+
 ### Some of the tricky statements and expressions
 * `+` operator tries to convert non primitive operands to primitive(i.e `number` or `string`).
 * first tries to find value of operand by `valueof()`. If it is String then both operand are concatenated as a string or they are added as number.
 ```JavaScript
-+[]       // -> 0
-+{}       // -> NaN
-[] + {}   // -> "[object Object]"
-{} + []   // -> 0
-({} + []) // -> "[object Object]"
-{} + {}   // -> "[object Object][object Object]"
-[] + []   // -> ""
++[]           // -> 0
++{}           // -> NaN
+[] + {}       // -> "[object Object]"
+{} + []       // -> 0
+({} + [])     // -> "[object Object]"
+{} + {}       // -> "[object Object][object Object]"
+[] + []       // -> ""
+NaN === NaN   // -> false
 ```

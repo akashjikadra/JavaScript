@@ -20,6 +20,8 @@ Core Fundamentals
 7) Objects
 8) Samples
 
+> Out of all datatypes listed above, `number`, `string`, `boolean`, `Bigint` are four primitive datatypes.
+
 ### typeOf()
 It returns a `string` with the type name of datatype.
 

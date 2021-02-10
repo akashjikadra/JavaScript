@@ -44,7 +44,7 @@ var ans = prompt("Are you a Programmer?", "Not Sure");
 It takes one argument which will be a question that can be answered in yes or no.
 If pressed `Ok`, it returns true else if you press `cancel`, it returns false as a result.
 ```JavaScript
-var ans = prompt("Are you a Programmer?");
+var ans = confirm("Are you a Programmer?");
 ```
 
 ### Type Conversion
